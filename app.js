@@ -15,6 +15,6 @@ app.get('/registration',(req,res)=>{
 app.get('/home',(req,res)=>{
     res.render('index3',{title:"ict"})
 })
-app.listen(3001,()=>{
+app.listen(process.env.PORT || 3001,()=>{
 console.log("server is running on http://localhost:3001")
 });
